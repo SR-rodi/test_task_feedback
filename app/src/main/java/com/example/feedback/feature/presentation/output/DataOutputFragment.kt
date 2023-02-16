@@ -40,5 +40,4 @@ class DataOutputFragment : BaseFragment<FragmentDataOutputBinding>() {
         binding.them.text = feedBack.theme
         binding.descriptions.text = feedBack.descriptions
     }
-
 }

@@ -9,5 +9,4 @@ import javax.inject.Singleton
 interface AppComponent {
 
      val viewModelFactory: ViewModelFactory
-
 }
