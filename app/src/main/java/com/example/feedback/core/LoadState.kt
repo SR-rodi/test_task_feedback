@@ -1,5 +1,5 @@
 package com.example.feedback.core
 
 enum class LoadState {
-    SUCCESS, ERROR, LOADING
+    SUCCESS, ERROR, LOADING,NEXT,EMPTY_FIELD
 }

@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">feedback</string>
+    <string name="form_title">Остались вопросы?\nИли чем - то не довольны?</string>
+    <string name="form_subtitle">Заполните форму, мы обязательно рассмотрим ваше обращение</string>
+    <string name="hint_name">Имя</string>
+    <string name="hint_them">Тема</string>
+    <string name="hint_feedback">Обратная связь</string>
+    <string name="button_send">Отправить</string>
+    <string name="error_empty">Одно или несколько полей не заполнены.\nВсе поля обязательны для заполнения.</string>
+    <string name="error">УПС! Что-то пошло не так!</string>
 </resources>
