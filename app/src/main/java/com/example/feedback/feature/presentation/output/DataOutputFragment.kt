@@ -6,9 +6,8 @@ import android.view.View
 import androidx.core.view.isVisible
 import androidx.navigation.fragment.findNavController
 import com.example.feedback.core.BaseFragment
-import com.example.feedback.core.LoadState
 import com.example.feedback.databinding.FragmentDataOutputBinding
-import com.example.feedback.feature.domain.module.Feedback
+import com.example.feedback.feature.data.Feedback
 
 class DataOutputFragment : BaseFragment<FragmentDataOutputBinding>() {
     override fun initBinding(inflater: LayoutInflater) = FragmentDataOutputBinding.inflate(inflater)
@@ -20,14 +19,8 @@ class DataOutputFragment : BaseFragment<FragmentDataOutputBinding>() {
 
         onClickBackButton()
 
-        dataObserve(viewModel.data) { feedBack -> setData(feedBack) }
+        setData(viewModel.getFeedBack())
 
-        dataObserve(viewModel.loadState) { loadState -> setLoad(loadState) }
-    }
-
-    private fun setLoad(loadState: LoadState) {
-        binding.error.isVisible = loadState == LoadState.ERROR
-        binding.progressCircular.isVisible = loadState == LoadState.LOADING
     }
 
     private fun onClickBackButton() =
